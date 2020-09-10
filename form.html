@@ -7,17 +7,49 @@
 </head>
 <body>
     <header>
-        <h1>Form Sample<h1>
-        <nav>
-        <a href="index.html">Home</a>
-        </nav>
+        <h1>Lets try to find your cat!<h1>
     </header>
     <main>
-        <form>
-            <label> User Name:
-                <input type="text" placeholder="User name">
+        <form action="https://formspree.io/xvoweylg" method="POST">
+            <label> Cat Name:
+                <input type="text" name="Cat Name" required>
             </label>
+        <br>
+            Gender:
+            <label>
+                <input type="radio" name="Gender" value="Male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="Gender" value="Female" required> Female
+            </label>
+        <br>
+            <label> Color:
+                <input type="text" name="Color">
+            </label>
+        <br>
+            <label> Last time seen:
+                <input type="date" placeholder="Date" name="Date">
+            </label>
+        <br>
+            <textarea name="Where did you see your pet last time? Describe the place" placeholder="Where did you see your pet last time? Describe the place" rows="10" cols="30"></textarea>
+        <br>
+            <label> Your Name:
+                <input type="text" name="Owner Name" required>  
+            </label>
+        <br>
+            <label> Your Contact Number:
+            <input type="tel" placeholder="+310" name="Contact Number">
+            </label>
+        <br>
+            <input type="submit" value="Submit">
         </form>
     </main>
 </body>
+    <footer>
+        <nav>
+            <a href="index.html">Home page</a>
+        <br>
+            <a href="https://www.petfinder.com/member/us/ca/los-angeles/kitten-rescue-ca55/">Adopt a cat in Los Angeles</a>
+        </nav>
+    </footer>
 </html>
